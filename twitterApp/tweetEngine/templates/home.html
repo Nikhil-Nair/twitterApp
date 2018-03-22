@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<ul class="list-group text-center">
+  <li class="list-group-item"><h3>Last 10 Tweets!</h3></li>
+  {% for tweet in tweets %}
+    <li class="list-group-item">{{tweet}}</li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}
